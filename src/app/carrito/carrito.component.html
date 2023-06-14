@@ -1,0 +1,18 @@
+<div class="card">
+    <div class="card-header">
+        <h4>Carrito</h4>
+    </div>
+    <div class="card-body">  
+        <h3>Información</h3>
+        <h4>Rueda seleccionada: {{seleccionada}}</h4>
+        <app-rueda
+         *ngFor="let rueda of ruedas" [identificador]="rueda.identificador" [marca]="rueda.marca" [precio]="rueda.Precio" (ruedaSeleccionada)="recibirSeleccionRueda($event)">
+        </app-rueda>
+
+       <!--<app-rueda [identificador]="'delantera-derecha'" [marca]="'Michelin'"></app-rueda>
+        <app-rueda [identificador]="'delantera-izquierda'" [marca]="'Iguazú'"></app-rueda>
+        <app-rueda [identificador]="'trasera-derecha'" [marca]="'Corona'"></app-rueda>
+        <app-rueda [identificador]="'trasera-izquierda'" [marca]="'JKL'"></app-rueda>--> 
+       
+      </div>  
+</div>

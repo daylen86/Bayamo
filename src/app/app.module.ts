@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AvioncitoComponent } from './avioncito/avioncito.component';
+import { CarritoComponent } from './carrito/carrito.component';
+import { RuedaComponent } from './rueda/rueda.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AvioncitoComponent
+    AvioncitoComponent,
+    CarritoComponent,
+    RuedaComponent
   ],
   imports: [
     BrowserModule,
